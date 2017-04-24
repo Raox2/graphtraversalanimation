@@ -1,0 +1,96 @@
+hr {
+	clear: both;
+	border-style: dashed;
+    border-width: 1px;
+	width: 60%;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+body {
+	background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+	color: #555555;
+	margin-left: 30px;
+}
+
+#settings {
+	padding: 4px;
+	margin: 10px;
+}
+
+#settings label {
+	font-size: 11px;
+}
+
+.setting {
+	padding: 2px;
+	margin-left: 8px;
+	margin-right: 8px;
+	float: left;
+}
+
+.canvasdiv {
+	float: left;
+}
+
+#timestep {
+	float: left;
+	display: inline;
+	text-align: center;
+	width: 200px;
+}
+
+.addenode {
+	float: left;
+	display: inline;
+	text-align: center;
+	width: 50px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+#addeweight {
+	width: 40px;
+}
+
+#animcanvas {
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #bbbbbb;
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+#psuedocode {
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #bbbbbb;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	font-family: Courier;
+	font-size: 80%;
+}
+
+.pschighlight {
+	background-color: #f4d484;
+}
+
+.stepper {
+	float: left;
+	display: inline-block;
+	width: 50px;
+}
+
+.addedgebutton {
+	float: left;
+	display: inline-block;
+	margin-left: 1px;
+	margin-right: 1px;
+}

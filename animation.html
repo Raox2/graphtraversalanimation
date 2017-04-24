@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Graph Traversal Animation</title>
+	<script src="js/animation.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<h1>Graph Traversal Animation</h1>
+	<p>This is a tool for animation of graph traversal problems in computer networks.
+		An algorithm can be run on a graph of your design.</p>
+
+	<div id="settings">
+		<div class="setting">
+			<label>Edit Edges:</label>
+			<form>
+				<select class="addenode" id="addenode1"></select>
+				<select class="addenode" id="addenode2"></select>
+				<input class="addenode" type="text" id="addeweight" placeholder="Weight">
+				<button type="button" class="addedgebutton" onclick="addEdge()">Add/Update</button>
+				<button type="button" class="addedgebutton" onclick="removeEdge()">Remove</button>
+			</form>
+		</div>
+		<div class="setting">
+			<label>Node Display Size:</label>
+			<form>
+				<select id="nodesize" onchange="resizeNodes()">
+				  <option value="small">Small</option>
+				  <option value="medium">Medium</option>
+				  <option value="large">Large</option>
+				</select>
+			</form>
+		</div>
+	</div>
+	<br /><br />
+
+	<hr />
+	<div>
+		<canvas id="animcanvas" width="500" height="500"></canvas>
+		<p id="psuedocode">
+			Psuedocode for the algorithm will appear in this box.<br /><br />
+
+			Parts of the code will highlight to indicate the phase of the animation.
+		</p>
+	</div>
+	<hr />
+
+	<div id="settings">
+		<div class="setting">
+			 <button onclick="dijkstra()">Dijkstra's Algorithm</button>
+			 <button onclick="kruskals()">Kruskal's Algorithm</button>
+		</div>
+		<div class="setting">
+			<label>Starting Node:</label>
+			<form>
+				<select id="startingnode" onchange="drawAnimationCanvas()"></select>
+			</form>
+		</div>
+	</div>
+	<br /><br />
+	<hr />
+
+	<div id="settings">
+		<div class="setting">
+			<button class="stepper" onclick="prevStep()">&lt;</button>
+			<div id="timestep">Step ?/?</div>
+			<button class="stepper" onclick="nextStep()">&gt;</button>
+		</div>
+	</div>
+</body>
+
+</html>
